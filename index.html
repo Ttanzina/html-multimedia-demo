@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Multimedia Demo</title>
+  <!-- MathJax for rendering equations -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    marquee {
+      background-color: #f0f0f0;
+      padding: 10px;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Multimedia Demo</h1>
+
+  <!-- Marquee Section -->
+  <section>
+    <h2>Scrolling News</h2>
+    <marquee behavior="scroll" direction="left">Breaking News: HTML5 introduces new multimedia elements!</marquee>
+  </section>
+
+  <!-- Audio Section -->
+  <section>
+    <h2>Audio Playback</h2>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Video Section -->
+  <section>
+    <h2>Embedded YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- PDF Section -->
+  <section>
+    <h2>Embedded PDF Document</h2>
+    <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+      width="600" height="500" style="border: none;">
+    </iframe>
+  </section>
+
+  <!-- Links Section -->
+  <section>
+    <h2>Useful Links</h2>
+    <ul>
+      <li><a href="https://www.w3schools.com/html/" target="_blank">Learn HTML at W3Schools</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Documentation on MDN</a></li>
+    </ul>
+  </section>
+
+  <!-- Math Equations Section -->
+  <section>
+    <h2>Mathematical Equation</h2>
+    <p>Here's an example of a quadratic formula rendered using MathJax:</p>
+    <p>$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$</p>
+  </section>
+
+</body>
+</html>
